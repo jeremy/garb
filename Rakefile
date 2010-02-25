@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake/gempackagetask'
 require 'rake/testtask'
 
-require 'lib/garb/version'
+require File.expand_path('../lib/garb/version', __FILE__)
 
 task :default => :test
 
