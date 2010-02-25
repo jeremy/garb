@@ -21,7 +21,7 @@ require 'garb/report_response'
 require 'garb/resource'
 require 'garb/report'
 
-require 'support'
+require 'garb/support'
 
 module Garb
   GA = "http://schemas.google.com/analytics/2008"
