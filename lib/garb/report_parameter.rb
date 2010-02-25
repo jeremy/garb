@@ -13,7 +13,14 @@ module Garb
     end
     
     def <<(element)
-      (@elements += [element].flatten).compact!
+      case element
+      when nil
+        # Ignore nil
+      when Array
+        @elements.concat element
+      else
+        @elements.push elements
+      end
       self
     end
     
